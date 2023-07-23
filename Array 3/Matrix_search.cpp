@@ -12,7 +12,7 @@ bool searchMatrix(vector<vector<int>> &matrix, int target)
         int mid = (low + high) / 2;
         if (matrix[mid / n][mid % n] == target)
             return true;
-        else if (matrix[mid / m][mid % n] < target)
+        else if (matrix[mid / n][mid % n] < target)
         {
             low = mid + 1;
         }
